@@ -55,14 +55,6 @@ export default {
           store.commit('setMenu', menu);
           store.commit('setType', type);
           store.commit('setName', admin_account_num);
-          // // 清空之前的动态路由，防止重复添加
-          // router.getRoutes().forEach((route) => {
-          //   if (route.name !== 'home1') {
-          //     router.removeRoute(route.name);
-          //   }
-          // });
-
-          // 动态添加路由
           menu.forEach((item) => {
             // 检查每个菜单项是否有子路由
             if (item.children) {
